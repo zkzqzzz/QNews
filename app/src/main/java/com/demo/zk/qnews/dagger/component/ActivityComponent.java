@@ -12,6 +12,7 @@ import com.demo.zk.qnews.mvp.ui.activities.NewsDetailActivity;
 import com.demo.zk.qnews.mvp.ui.activities.NewsPhotoDetailActivity;
 import com.demo.zk.qnews.mvp.ui.activities.PhotoActivity;
 import com.demo.zk.qnews.mvp.ui.activities.PhotoDetailActivity;
+import com.demo.zk.qnews.mvp.ui.activities.WeatherActivity;
 
 import dagger.Component;
 
@@ -47,4 +48,6 @@ public interface ActivityComponent {
     void inject(PhotoActivity photoActivity);
 
     void inject(PhotoDetailActivity photoDetailActivity);
+
+    void inject(WeatherActivity weatherActivity);
 }

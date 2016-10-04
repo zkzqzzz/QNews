@@ -9,6 +9,8 @@ import com.demo.zk.qnews.common.HostType;
 import com.demo.zk.qnews.mvp.entity.GirlData;
 import com.demo.zk.qnews.mvp.entity.NewsDetail;
 import com.demo.zk.qnews.mvp.entity.NewsSummary;
+import com.demo.zk.qnews.mvp.entity.WeatherData;
+import com.demo.zk.qnews.mvp.entity.WeatherResponse;
 import com.demo.zk.qnews.utils.NetUtil;
 import com.socks.library.KLog;
 
@@ -183,5 +185,9 @@ public class RetrofitManager {
 
     public Observable<GirlData> getPhotoListObservable(int size, int page) {
         return mNewsService.getPhotoList(size, page);
+    }
+
+    public Observable<WeatherResponse> getWeatherObservable(String location, String ak) {
+        return mNewsService.getWeather(location,ApiConstants.BAIDU_AK);
     }
 }

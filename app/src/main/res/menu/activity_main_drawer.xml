@@ -15,10 +15,10 @@
             android:id="@+id/nav_video"
             android:icon="@drawable/ic_menu_video"
             android:title="@string/video"/>
-        <!--        <item
-                    android:id="@+id/nav_about"
-                    android:icon="@drawable/ic_arrow_back"
-                    android:title="@string/about"/>-->
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_menu_weather"
+            android:title="@string/weather"/>
     </group>
 
     <item android:title="@string/tools">

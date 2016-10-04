@@ -34,6 +34,7 @@ import com.demo.zk.qnews.mvp.ui.activities.NewsActivity;
 import com.demo.zk.qnews.mvp.ui.activities.NewsDetailActivity;
 import com.demo.zk.qnews.mvp.ui.activities.PhotoActivity;
 import com.demo.zk.qnews.mvp.ui.activities.PhotoDetailActivity;
+import com.demo.zk.qnews.mvp.ui.activities.WeatherActivity;
 import com.demo.zk.qnews.utils.MyUtils;
 import com.demo.zk.qnews.utils.NetUtil;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
@@ -203,6 +204,8 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
                         case R.id.nav_video:
                             Toast.makeText(BaseActivity.this, "施工准备中...", Toast.LENGTH_SHORT).show();
                             break;
+                        case R.id.nav_weather:
+                            mClass = WeatherActivity.class;
                         case R.id.nav_night_mode:
                             break;
                     }

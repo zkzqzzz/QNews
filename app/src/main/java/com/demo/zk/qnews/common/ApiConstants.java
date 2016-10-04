@@ -110,7 +110,15 @@ public class ApiConstants {
     /**
      * 天气预报url
      */
-    public static final String WEATHER_HOST = "http://wthrcdn.etouch.cn/";
+    //public static final String WEATHER_HOST = "https://route.showapi.com/9-6?showapi_appid=23562&showapi_sign=23d0540a28d18f54f3e1d9ce82d3c78f";
+
+    public static final String WEATHER_HOST = "http://api.map.baidu.com/";
+
+    public static final String BAIDU_AK = "MPDgj92wUYvRmyaUdQs1XwCf";
+    //百度定位
+    public static final String INTERFACE_LOCATION = "http://api.map.baidu.com/geocoder";
+
+
 
     /**
      * 新浪图片新闻
@@ -164,6 +172,9 @@ public class ApiConstants {
                 break;
             case HostType.NEWS_DETAIL_HTML_PHOTO:
                 host = "http://kaku.com/";
+                break;
+            case HostType.WEATHER_CITY:
+                host = WEATHER_HOST;
                 break;
             default:
                 host = "";
